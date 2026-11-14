@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #071b38, #123e68);
+    color: white;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header h1 span {
+    color: #45d6ff;
+}
+
+header p {
+    color: #b8d5ec;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    min-width: 180px;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #12a9e8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #087bb4;
+}
+
+#status {
+    text-align: center;
+    color: #c3e6ff;
+    margin: 15px 0;
+}
+
+.weather-card {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weather-icon {
+    font-size: 65px;
+    margin-top: 20px;
+}
+
+#temperature {
+    font-size: 65px;
+    margin: 10px;
+}
+
+#dateTime {
+    color: #b8d5ec;
+    margin-top: 10px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.detail-box {
+    background: rgba(255,255,255,0.10);
+    padding: 20px 10px;
+    border-radius: 12px;
+}
+
+.detail-box p {
+    color: #b8d5ec;
+    margin-bottom: 10px;
+}
+
+.forecast-section {
+    margin-top: 35px;
+}
+
+.forecast-section h2 {
+    margin-bottom: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0 20px;
+}
+
+.hour-card {
+    min-width: 125px;
+    background: rgba(255,255,255,0.10);
+    border-radius: 15px;
+    padding: 20px 12px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.hour-card p {
+    margin-bottom: 12px;
+    color: #c6e3f7;
+}
+
+.hour-card .icon {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.hour-card h3 {
+    margin: 10px 0;
+}
+
+.hour-card small {
+    color: #b8d5ec;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #9bbbd6;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 15px;
+    }
+
+    .details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .weather-card {
+        padding: 20px 12px;
+    }
+
+    button {
+        flex: 1;
+    }
+}
