@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow | 24 Hour Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Weather<span>Now</span></h1>
+            <p>Your location. Your weather. Your next 24 hours.</p>
+        </header>
+
+        <section class="search-section">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+            <button id="searchBtn">Search</button>
+            <button id="locationBtn">📍 My Location</button>
+        </section>
+
+        <p id="status">Search a city or allow location access.</p>
+
+        <section class="weather-card">
+
+            <h2 id="cityName">Weather Information</h2>
+            <p id="dateTime">Waiting for location...</p>
+
+            <div class="current-weather">
+                <div>
+                    <div id="weatherIcon" class="weather-icon">🌤️</div>
+                    <h1 id="temperature">--°C</h1>
+                    <h3 id="weatherCondition">--</h3>
+                </div>
+            </div>
+
+            <div class="details">
+
+                <div class="detail-box">
+                    <p>Feels Like</p>
+                    <h3 id="feelsLike">--°C</h3>
+                </div>
+
+                <div class="detail-box">
+                    <p>Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+
+                <div class="detail-box">
+                    <p>Wind Speed</p>
+                    <h3 id="wind">-- km/h</h3>
+                </div>
+
+                <div class="detail-box">
+                    <p>Rain Probability</p>
+                    <h3 id="rain">--%</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="forecast-section">
+
+            <h2>Next 24 Hours</h2>
+
+            <div id="forecastContainer" class="forecast-container">
+                <p>Hourly forecast will appear here.</p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Weather data powered by Open-Meteo API</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
